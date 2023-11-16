@@ -14,11 +14,19 @@ header {
   padding: 20px;
   text-transform: capitalize;
 }
+header h1 {
+  color: #fff;
+  padding-left: 10px;
+  font-size: 35px;
+}
 
 .logo {
-  color: #fff;
-  font-size: 30px;
   display: flex;
+}
+.logo .logo-img {
+  padding-bottom: 10px;
+  height: 50px;
+  width: auto;
 }
 
 .logo-img {
@@ -386,7 +394,7 @@ section {
 .contac a {
   color: #fff;
   text-align: center;
-  background-color: pink;
+  background-color: rgb(33, 209, 240);
   text-decoration: none;
   display: inline-block;
   width: 90%;
