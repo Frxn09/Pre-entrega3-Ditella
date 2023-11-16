@@ -15,34 +15,33 @@ header {
   text-transform: capitalize;
 }
 
-header aside img {
-  height: 100%;
-}
-
 .logo {
   color: #fff;
   font-size: 30px;
+  display: flex;
 }
 
 .logo-img {
-  height: 27px;
+  padding-bottom: 10px;
+  height: 50px;
   width: auto;
 }
 
 .barra ul {
   list-style: none;
 }
-
 .barra ul li {
+  padding: 5px;
   display: inline-block;
 }
 
 .barra a {
   text-decoration: none;
   color: #ffffff;
+  transition: 0.3s;
 }
 
-.barra a:hover {
+a:hover {
   color: #4969f8;
 }
 
@@ -73,9 +72,14 @@ main.home {
   text-decoration: none;
   border: 2px solid black;
   box-shadow: 5px 5px black;
+  transition: 0.3s;
 }
 .call p {
   margin-bottom: 20px;
+}
+
+.call a:hover {
+  color: black;
 }
 
 h1 {
@@ -100,6 +104,7 @@ section {
   background-color: #ffffff;
   border: 3px solid rgb(255, 255, 255);
   box-shadow: 10px 5px rgb(151, 151, 151);
+  transition: 0.5s;
 }
 .card .card-img11 {
   background-image: url(../img/zapas2.jpg);
@@ -129,6 +134,7 @@ section {
   margin: 10px;
   padding: 10px;
   box-shadow: 5px 5px black;
+  transition: 0.5s;
 }
 .card .card-title {
   text-align: center;
@@ -137,6 +143,15 @@ section {
   padding: 10px;
   font-family: monospace;
   font-size: 25px;
+}
+
+.card a:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .footer {
@@ -152,7 +167,8 @@ section {
   color: white;
   background-size: 200px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-sup {
@@ -182,7 +198,7 @@ section {
 }
 
 .iframe-call {
-  color: black;
+  color: white;
 }
 
 .card-img1 {
@@ -356,7 +372,8 @@ section {
 
 .contac {
   display: flex;
-  border: 2px solid black;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
   justify-content: center;
   width: 700px;
   height: 400px;
@@ -364,7 +381,24 @@ section {
   border-radius: 10px;
   background-size: cover;
   margin-left: 500px;
-  background-color: rgba(255, 255, 255, 0.74);
+  background-image: linear-gradient(rgba(168, 167, 167, 0.74), rgba(0, 0, 0, 0.74));
+}
+.contac a {
+  color: #fff;
+  text-align: center;
+  background-color: pink;
+  text-decoration: none;
+  display: inline-block;
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px black;
+  transition: 0.5s;
+}
+
+.contac a:hover {
+  color: #ffffff;
+  background-color: #4969f8;
 }
 
 .titulocon {
@@ -447,7 +481,7 @@ section {
 }
 
 .fondo-main {
-  background-image: linear-gradient(black, rgb(0, 0, 136));
+  background-image: linear-gradient(black, rgb(0, 0, 136), black);
 }
 
 @media screen and (min-width: 319px) {
@@ -491,6 +525,10 @@ section {
   .logo {
     font-size: 18px;
   }
+  .iframe-call {
+    width: 100%;
+    background-color: #000000;
+  }
 }
 @media screen and (max-width: 765px) {
   .carousel,
@@ -506,7 +544,7 @@ section {
     width: 300px;
   }
   .nosotros-call {
-    height: 550px;
+    height: 600px;
     width: 250px;
   }
   .maincon {
@@ -543,7 +581,7 @@ section {
     width: 90%;
   }
   .nosotros-call {
-    height: 250px;
+    height: 300px;
     width: 500px;
   }
   .card {
